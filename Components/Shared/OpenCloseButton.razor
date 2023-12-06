@@ -1,0 +1,13 @@
+﻿<span>
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 9.5 1 V 18 M 1 9.5 H 18" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke="#25473F" 
+              transform="@(IsOpened ? "transform=\"rotate(45)\"" : "")" /> <!--todo: bugfix-->
+    </svg>
+</span>
+@code {
+    [Parameter] public bool IsOpened { get; set; } = false; // todo: check why css is not loaded
+}

@@ -1,0 +1,22 @@
+﻿<a href="@Link" @onclick=OnClick!>
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+        <path d="M31.2143 3.94287L14.7857 20.3714" stroke="white" stroke-width="2.77778" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M14.7857 3.94287L31.2143 20.3714" stroke="white" stroke-width="2.77778" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+</a>
+@code {
+    [Parameter] public string? Link { get; set; } 
+    [Parameter] public Action? OnClick { get; set; }
+
+    protected override Task OnParametersSetAsync()
+    {
+        if (Link is null && OnClick is null)
+            throw new ArgumentException($"At least one of the parameters ({nameof(Link)} or {nameof(OnClick)}) should be filled.");
+        else if (OnClick is not null)
+            Link = "#";
+        else
+            OnClick = () => { };
+
+        return base.OnParametersSetAsync();
+    }
+}

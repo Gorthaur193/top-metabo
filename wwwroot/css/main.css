@@ -1,0 +1,13 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto:regular|Inter:regular&subset=cyrillic,latin);
+
+* {
+    box-sizing: border-box;
+}
+header, main, footer {
+    display: flex;
+
+    flex-shrink: 0;
+}
+    header div, header span, header a, header p, main section, main div, main span, main a, main p, footer div, footer span, footer a, footer p {
+        display: inline-flex;
+    }
