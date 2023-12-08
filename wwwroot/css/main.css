@@ -11,3 +11,51 @@ header, main, footer {
     header div, header span, header a, header p, main section, main div, main span, main a, main p, footer div, footer span, footer a, footer p {
         display: inline-flex;
     }
+
+.header-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+    .header-text.s {
+        font-weight: 400;
+        line-height: 130%;
+    }
+.regular-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.s {
+    font-size: 1.0625rem;
+}
+.m {
+    font-size: 1.25rem;
+}
+.l {
+    font-size: 1.5rem;
+}
+.xl {
+    font-size: 3rem;
+}
+
+.green {
+    color: #25473F;
+}
+
+.hint {
+    color: #7B8A9C;
+}
+
+.light-green {
+    color: #A9D0C7;
+}
+.nab {
+    color: #4D6F67;
+}
+.white {
+    color: #FFF;
+}

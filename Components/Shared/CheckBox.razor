@@ -1,0 +1,18 @@
+﻿<div class="check-box">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        @if (IsChecked)
+        {
+            <rect x="3" y="3" width="18" height="18" rx="2" fill="#151515" />
+            <path d="M10 16.4L6 12.4L7.4 11L10 13.6L16.6 7L18 8.4L10 16.4Z" fill="white" />
+        }
+        else
+        {
+            <rect x="4" y="4" width="16" height="16" rx="1" stroke="#211D27" stroke-width="2" />
+        }
+    </svg>
+    <span class="regular-text s light-green">@Text</span>
+</div>
+@code {
+    [Parameter] public bool IsChecked { get; set; } = false;
+    [Parameter] public string Text { get; set; } = string.Empty;
+}

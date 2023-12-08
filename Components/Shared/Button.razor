@@ -1,0 +1,14 @@
+﻿<span @onmouseover=OnMouseOver @onmouseleave=OnMouseOut 
+      style="background: @(_isOver ? Attributes.BackgroundHover : Attributes.Background);
+             border: 2px solid @(_isOver ? Attributes.BackgroundHover : Attributes.Background);
+             color: @(_isOver ? Attributes.TextColorHover : Attributes.TextColor)">
+@Text
+</span>
+@code {
+    [Parameter] public string Text { get; set; } = string.Empty;
+    [Parameter] public ButtonAttributes Attributes { get; set; } = new();
+
+    private bool _isOver = false;
+    private void OnMouseOver() => _isOver = true;
+    private void OnMouseOut() => _isOver = false;
+}

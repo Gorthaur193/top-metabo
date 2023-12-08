@@ -1,0 +1,16 @@
+﻿span {
+    padding: 0.75rem 1.25rem 1rem 1.25rem;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 0.375rem;
+}
+.regular-text.s {
+    line-height: normal;
+}
+input {
+    flex: 1 0 0;
+    border: none;
+}
+input :focus-within{
+    border: none;
+}
