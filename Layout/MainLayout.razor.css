@@ -1,0 +1,41 @@
+﻿header {
+    margin-top: 1.88rem;
+    background: #25473F;
+    border-radius: 0.375rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+    header > div {
+        align-items: center;
+        gap: 1.875rem;
+
+        margin: 0 8.2rem 0 6.9rem;
+    }
+a{
+    line-height: normal;
+}
+    a:hover {
+        color: #A9D0C7;
+    }
+
+
+.footer-container{
+    gap: 1.88rem;
+    flex-wrap:wrap;
+}
+.contact-element{
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+.footer-closer{
+    justify-content: space-between;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1860 552' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1860 60C1860 48.9543 1851.05 40 1840 40H1649.1C1643.14 40 1637.49 37.3447 1633.69 32.757L1617.13 12.757C1612.26 6.87245 1606.28 0 1598.64 0H20C8.9543 0 0 8.9543 0 20V532C0 543.046 8.95429 552 20 552H1840C1851.05 552 1860 543.046 1860 532V60Z' fill='%23151515' /%3E%3C/svg%3E");
+    background-size: cover; 
+}

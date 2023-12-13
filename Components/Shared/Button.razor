@@ -1,6 +1,6 @@
 ﻿<span @onmouseover=OnMouseOver @onmouseleave=OnMouseOut 
       style="background: @(_isOver ? Attributes.BackgroundHover : Attributes.Background);
-             border: 2px solid @(_isOver ? Attributes.BackgroundHover : Attributes.Background);
+             border: 2px solid @(_isOver ? Attributes.BorderColorHover : Attributes.BorderColor);
              color: @(_isOver ? Attributes.TextColorHover : Attributes.TextColor)">
 @Text
 </span>
