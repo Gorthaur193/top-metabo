@@ -68,3 +68,9 @@ header, main, footer {
 .white {
     color: #FFF;
 }
+
+.title {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
