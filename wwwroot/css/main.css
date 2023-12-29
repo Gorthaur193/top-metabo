@@ -17,10 +17,13 @@ header, main, footer {
     display: flex;
     flex-shrink: 0;
 }
-    header div, header span, header a, header p, main section, main div, main span, main a, main p, footer div, footer span, footer a, footer p {
+    header div, header span, header a, header p, main section, main div, main span, main a, main p, footer div, footer span, footer a, footer p, article {
         display: inline-flex;
     }
-
+main{
+    flex-direction:column;
+    flex-direction:column;
+}
 .header-text {
     font-family: Inter;
     font-style: normal;
